@@ -1,0 +1,24 @@
+header{
+    display: grid;
+    grid-area: header;
+    background-color: rgba(0, 0, 0, 0.874);
+    height:50px;
+    .menuhorizontal{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-items: center;
+        font-size:16px;
+        list-style: none;
+        letter-spacing: 5px;
+    }
+
+    }
+    .menuhorizontal_item--color{
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-family:'Archivo Narrow', sans-serif;
+            font-weight:400; 
+        }
+}

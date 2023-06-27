@@ -1,0 +1,53 @@
+main{
+    section{
+        @include ajustes-main;
+    }
+        h1:hover{
+            background-color: rgba(0, 0, 0, 0.14);
+            color:rgb(0, 0, 0);
+            transform: scale(1.2);
+            border-radius: 10px;
+        }
+    
+        .camperas_texto{
+            display: grid;
+            color: white;
+            h1{
+                @include letra-titulos-secundarios;
+            }
+            
+        }
+        .camperas_texto_img{
+            img{
+                background: linear-gradient(175deg, #000000, #cd323291);
+        
+            }
+        }
+        
+        .camperas_texto_motivacional{
+                h5{
+                    @include letra-titulos-secundarios;
+                }
+            }
+     }
+     nav{
+        display: grid;
+        grid-area:nav;
+        grid-template-columns: repeat(3,auto);
+        justify-content: space-around;
+        background-color: rgba(218, 134, 134, 0.228);
+        border: 1px solid rgb(0, 0, 0); 
+        div{
+            a{
+                img{
+                    width: 250px;
+                }
+                .hovernav:hover{
+                    transform: scale(0.9);
+                }
+            }
+        }
+     }
+     aside{
+        border: 1px solid black; 
+     }

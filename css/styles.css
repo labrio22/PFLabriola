@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Dosis:wght@200;400&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  border: 0;
+}
+
+body .grilla {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "header header header" "nav camperas  aside" "nav camperas  aside" "footer  footer footer";
+  grid-template-rows: 25% 25% 70% 25%;
+  grid-template-columns: 20% auto 15%;
+}
+
+@media screen and (max-width: 700px) {
+  .grilla {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header" "camperas" "nav" "aside" "footer";
+    grid-template-rows: repeat(5, 2fr);
+    grid-template-columns: auto;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: baseline;
+  }
+  .especiales_imagenes {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .especiales_imagenes img {
+    width: 250px;
+    border-top-right-radius: 30px;
+  }
+  .menuhorizontal_productos {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .menuhorizontal {
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 0;
+  }
+  header {
+    display: grid;
+  }
+  .section_productos_imagenes {
+    display: grid;
+    row-gap: 1;
+    padding-top: 2em;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50% 50%;
+  }
+  .section_productos_imagenes img {
+    width: 250px;
+    height: 350px;
+  }
+  .equipamiento_contenido {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+  .aside_equipamiento_contenido {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    background-color: rgba(255, 0, 0, 0.323);
+  }
+  .mapa_nosotros {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 360px) {
+  .grilla {
+    width: 100%;
+  }
+  .section_productos_imagenes {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .camperas {
+    display: grid;
+    row-gap: 0;
+    padding-top: 20px;
+    grid-template-columns: auto;
+  }
+  .equipamiento_contenido {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  footer {
+    width: auto;
+  }
+  .menuhorizontal {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    font-size: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 5px;
+  }
+  .menuhorizontal_productos {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-items: center;
+    font-size: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 5px;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+header {
+  display: grid;
+  grid-area: header;
+  background-color: rgba(0, 0, 0, 0.874);
+  height: 50px;
+}
+header .menuhorizontal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  font-size: 16px;
+  list-style: none;
+  letter-spacing: 5px;
+}
+
+.menuhorizontal_item--color a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 400;
+}
+
+aside {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-size: 30px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-image: url(../img/imagennav.jpg);
+  background-position: 1em;
+  border: 1px solid black;
+}
+aside .aside_equipamiento_contenido {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  background-color: rgba(255, 0, 0, 0.323);
+}
+aside .aside_equipamiento_contenido .aside_equipamiento_contenido--1 {
+  text-align: center;
+  font-size: 50px;
+}
+aside .aside_equipamiento_contenido .aside_equipamiento_contenido--2 {
+  font-size: 30px;
+}
+aside .aside_equipamiento_contenido .aside_equipamiento_contenido--3 {
+  font-size: 30px;
+}
+
+main section {
+  display: grid;
+  grid-area: camperas;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  justify-content: center;
+  align-items: start;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.885);
+  border: 1px solid black;
+}
+main h1:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  color: rgb(0, 0, 0);
+  transform: scale(1.2);
+  border-radius: 10px;
+}
+main .camperas_texto {
+  display: grid;
+  color: white;
+}
+main .camperas_texto h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+main .camperas_texto_img img {
+  background: linear-gradient(175deg, #000000, rgba(205, 50, 50, 0.568627451));
+}
+main .camperas_texto_motivacional h5 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+nav {
+  display: grid;
+  grid-area: nav;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-around;
+  background-color: rgba(218, 134, 134, 0.228);
+  border: 1px solid rgb(0, 0, 0);
+}
+nav div a img {
+  width: 250px;
+}
+nav div a .hovernav:hover {
+  transform: scale(0.9);
+}
+
+aside {
+  border: 1px solid black;
+}
+
+main section {
+  display: grid;
+  grid-area: camperas;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  justify-content: center;
+  align-items: start;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.885);
+  border: 1px solid black;
+}
+main section h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+main section .section_productos_imagenes {
+  display: grid;
+  padding-top: 20px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 1em;
+}
+main section .section_productos_imagenes .section_productos--item {
+  display: grid;
+  justify-self: center;
+  align-self: end;
+  align-content: center;
+  grid-template-rows: auto auto;
+  text-align: start;
+  row-gap: 4px;
+}
+main section .section_productos_imagenes .section_productos--item img {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top: solid 30px rgba(165, 160, 207, 0.777);
+  width: 450px;
+  height: 450px;
+}
+main section .section_productos_imagenes .section_productos--item .info-productos {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  justify-items: center;
+  font-size: 20px;
+  background-color: #a2a2a2;
+  text-align: center;
+  color: black;
+  border-bottom-left-radius: 45px;
+}
+main section .section_productos_imagenes .section_productos--item .info-productos:hover {
+  background-color: rgba(64, 216, 94, 0.752);
+  transform: scale(1.1);
+  color: white;
+  transition: 0.3s;
+  transform: scale(0.9);
+}
+
+main .camperas {
+  grid-template-columns: auto;
+  display: grid;
+  row-gap: 0;
+  padding-top: 20px;
+  grid-template-columns: auto;
+  border: 1px solid black;
+}
+main .camperas h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-size: 30px;
+  padding: 1em;
+}
+main .camperas .form_section {
+  display: grid;
+  width: 300px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 100px;
+  border-top: 5px solid rgba(165, 160, 207, 0.777);
+  border-bottom: 5px solid rgba(165, 160, 207, 0.777);
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+  grid-template-rows: auto auto auto auto;
+}
+main .camperas .form_section form {
+  animation-name: hood;
+  animation-duration: 1.5s;
+}
+@keyframes hood {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main .camperas .form_section label {
+  padding: 20px 0;
+  font-size: 35px;
+  color: white;
+}
+main .camperas .form_section input {
+  color: black;
+  font-size: 35px;
+  border-radius: 45px;
+}
+main .camperas .form_section .form_section_botones {
+  display: grid;
+  width: 400px;
+  display: grid;
+  padding: 5px 0 5px 0;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+nav {
+  display: flex;
+  border: 1px solid black;
+  font-size: 30px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+  background-color: rgba(218, 134, 134, 0.228);
+}
+nav .mapa_nosotros {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+nav .mapa_nosotros div {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Archivo Narrow", sans-serif;
+  color: black;
+  font-weight: 400;
+}
+nav .mapa_nosotros iframe {
+  border: solid 10px rgba(0, 0, 0, 0.698);
+  border-radius: 30px;
+}
+
+main section {
+  display: grid;
+  grid-area: camperas;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  justify-content: center;
+  align-items: start;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.885);
+  border: 1px solid black;
+}
+main h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+main .especiales_imagenes {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  row-gap: 2em;
+  column-gap: 3em;
+}
+main .especiales_imagenes img {
+  width: 260px;
+  height: 350px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top: solid 30px rgba(165, 160, 207, 0.777);
+}
+main .especiales_imagenes .especiales_imagenes--item {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  gap: 2px;
+}
+main .especiales_imagenes .especiales_imagenes--item p {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-bottom-left-radius: 45px;
+  background-color: #a2a2a2;
+  width: 260px;
+  text-align: center;
+}
+main .especiales_imagenes .especiales_imagenes--item p:hover {
+  background-color: rgba(64, 216, 94, 0.752);
+  transform: scale(1.1);
+  color: white;
+  transition: 0.3s;
+}
+
+main section {
+  display: grid;
+  grid-area: camperas;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  justify-content: center;
+  align-items: start;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.885);
+  border: 1px solid black;
+}
+main .section_equipamiento_titulo {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+}
+main .section_equipamiento_titulo h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+main .section_equipamiento_titulo .equipamiento_contenido {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto;
+  gap: 2em;
+}
+main .section_equipamiento_titulo .equipamiento_contenido img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+}
+main .section_equipamiento_titulo .equipamiento_contenido .especiales_letra {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-bottom-left-radius: 45px;
+  background-color: #a2a2a2;
+  width: 260px;
+  text-align: center;
+}
+main .section_equipamiento_titulo .equipamiento_contenido .especiales_letra:hover {
+  background-color: rgba(64, 216, 94, 0.752);
+  transform: scale(1.1);
+  color: white;
+  transition: 0.3s;
+}
+main .section_equipamiento_titulo .equipamiento_contenido .especiales_contenido--item {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  gap: 2px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid black;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  background-color: rgba(0, 49, 185, 0.622);
+  height: 3em;
+}
+footer p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 400;
+}
+footer div {
+  align-self: center;
+  justify-self: center;
+}
+footer div img {
+  width: 45px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

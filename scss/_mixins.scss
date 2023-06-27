@@ -1,0 +1,26 @@
+@mixin ajustes-main{
+    display: grid;
+    grid-area: camperas;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    justify-content: center;
+    align-items: start;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.885);
+    border: 1px solid black; 
+}
+
+@mixin letra-titulos-secundarios{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+@mixin hover-precios{
+    background-color: rgba(64, 216, 94, 0.752) ;
+    transform: scale(1.1);
+    color: white;
+    transition: 0.3s;
+}

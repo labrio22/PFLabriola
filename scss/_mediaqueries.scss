@@ -1,0 +1,123 @@
+@media screen and (max-width:700px){
+    .grilla{
+
+        display:grid;
+        height:100vh;
+        grid-template-areas:
+        "header"
+        "camperas"
+        "nav"
+        "aside" 
+        "footer";
+        grid-template-rows:repeat(5,2fr);
+        grid-template-columns: auto;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: baseline;
+        }
+        .especiales_imagenes{
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        img{
+            width: 250px;
+            border-top-right-radius: 30px;
+        }
+        }
+        .menuhorizontal_productos{
+        display: grid;
+        grid-template-columns: auto;
+        
+        }
+        .menuhorizontal{
+        display: grid;
+        grid-template-columns: auto;
+        padding-left: 0;
+        }
+        header{
+            display: grid;
+    
+        }
+    .section_productos_imagenes{    
+        display: grid;
+        row-gap:1;
+        padding-top: 2em;
+        grid-template-columns:auto auto;
+        grid-template-rows:50% 50%;
+            img{
+            width:250px;
+            height: 350px;
+            }
+        }
+        .equipamiento_contenido{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+                }   
+        .aside_equipamiento_contenido{
+        display: grid;
+        grid-template-rows:auto auto;
+        justify-items: center;
+        background-color: rgba(255, 0, 0, 0.323);
+        }
+        .mapa_nosotros{
+            flex-direction: column;
+        }
+    
+}
+
+
+@media screen and (max-width:360px){
+    .grilla{
+        width: 100%;
+    }
+    .section_productos_imagenes{
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows:auto;
+    }
+    .camperas{
+        display: grid;
+        row-gap: 0;
+        padding-top: 20px;
+        grid-template-columns:auto;
+        
+    }
+    .equipamiento_contenido{
+        display: grid;
+        grid-template-columns:auto;
+    }
+    footer{
+        width: auto;
+    }
+    .menuhorizontal{
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+        justify-items: center;
+        font-size:30px;
+        text-decoration: none;
+        list-style-type: none;
+        letter-spacing: 5px;
+    } 
+    .menuhorizontal_productos{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-items: center;
+        font-size:30px;
+        text-decoration: none;
+        list-style-type: none;
+        letter-spacing: 5px;
+    }
+    .nav{
+        display:grid;
+        grid-template-columns:1fr;
+        justify-items: center;
+    }
+}
+        

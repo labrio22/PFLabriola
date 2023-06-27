@@ -1,0 +1,51 @@
+
+main{
+    section{
+        @include ajustes-main;
+        h2{
+            @include letra-titulos-secundarios;
+        }
+        .section_productos_imagenes{
+            display: grid;
+            padding-top: 20px;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            gap:1em;
+                .section_productos--item{
+                    display: grid;
+                    justify-self: center;
+                    align-self:end;
+                    align-content: center;
+                    grid-template-rows: auto auto;
+                    text-align: start;
+                    row-gap: 4px;
+                
+                    img{
+                    border-top-right-radius: 30px;
+                    border-top-left-radius: 30px;
+                    border-top: solid 30px rgba(165, 160, 207, 0.777);
+                    width: 450px;
+                    height: 450px;
+                    }
+                
+                    .info-productos{
+                    display: grid;
+                    grid-template-columns:repeat(2,auto);
+                    font-family:  'Dosis', sans-serif;
+                    font-weight: 400;
+                    justify-items: center;
+                    font-size: 20px;
+                    background-color:#a2a2a2;
+                    text-align: center;
+                    color: black;
+                    border-bottom-left-radius: 45px;
+                        &:hover{
+                            @include hover-precios;
+                            transform:scale(0.9)
+                     }
+                        }
+                }
+            
+        }
+    }  
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Dosis:wght@200;400&family=Roboto:wght@100&display=swap');
+@import "_grilla";
+@import "_mediaqueries";
+@import "_mixins";
+@import "_colores";
+@import "_header";
+@import "_aside-equipamiento";
+@import "_main-inicio";
+@import "_main-productos";
+@import "_main-nosotros";
+@import "_nav-nosotros";
+@import "_main-especiales";
+@import "_main-equipamiento";
+@import "_footer";
+
+
+@mixin ajustes-main{
+    display: grid;
+    grid-area: camperas;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    justify-content: center;
+    align-items: start;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.885);
+    border: 1px solid black; 
+}

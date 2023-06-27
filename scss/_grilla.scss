@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    border:0;
+}
+body{
+    .grilla{
+    display:grid;
+    height: 100vh;
+    grid-template-areas:
+    "header header header"
+    "nav camperas  aside"
+    "nav camperas  aside"
+    "footer  footer footer";
+    grid-template-rows: 25% 25% 70% 25%;
+    grid-template-columns: 20% auto 15%;
+    }
+}

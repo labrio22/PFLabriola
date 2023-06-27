@@ -1,0 +1,26 @@
+footer{
+    display: grid;
+    grid-template-columns:50% 50%;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid black; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing:5px; 
+    background-color: $footer-color;
+    height: 3em;
+    p{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family:'Archivo Narrow', sans-serif;
+        font-weight: 400;
+    }
+    div{
+        align-self: center;
+        justify-self:center;
+        img{
+            width: 45px;
+            height: 30px;
+        }
+    }
+}
