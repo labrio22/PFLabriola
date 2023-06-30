@@ -46,6 +46,7 @@
         .form_section{
             width:100%;
             form{
+                width: auto;
                 justify-self: center;
     
                 .form_section--letra{
@@ -56,7 +57,7 @@
                 }
                 .form_section--respuesta{
                     justify-items: center;
-                    width:100%;
+                    width: auto;
                 }
                 .form_section_botones{  
                     input{
@@ -71,11 +72,12 @@
     .nav_nosotros{
         width:100%;
         .mapa_nosotros{
-            width: 100%;
+            width:100%;
             .mapa_texto{
                 text-align: center;
             }
             .bordes-mapa{
+            width: 100%;
             border-radius: 0;
             border: 0;
         }
@@ -258,11 +260,10 @@
         .section_productos_imagenes{
             display: grid;
             grid-template-columns:auto;
-            grid-template-rows: auto;
             .section_productos--item{
                 img{
-                    width: 200px;
-                    height: 200px;
+                    width: 100px;
+                    height: 100px;
                 }
                 .info-productos{
                     border-bottom-left-radius:  0;

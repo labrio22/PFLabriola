@@ -20,7 +20,7 @@ aside{
             font-size: 30px;
         }
         .aside_equipamiento_contenido--3{
-            font-size: 30px;
+            @extend .aside_equipamiento_contenido--2
         }
     }
 }

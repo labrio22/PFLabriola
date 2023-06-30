@@ -8,7 +8,6 @@ main{
             gap: 10px;
             h2{
                 @include letra-titulos-secundarios;
-                text-align: center;
             }
             .equipamiento_contenido{
                 display:grid;
@@ -37,7 +36,7 @@ main{
                 display: grid;
                 grid-template-rows: auto auto;
                 justify-items: center;
-                gap: 2px;
+                gap:2px;
             
                 }
             }

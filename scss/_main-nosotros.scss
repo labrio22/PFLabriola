@@ -1,19 +1,14 @@
 main{
+    width:100%;
     .camperas{
-        grid-template-columns: auto;
-        display: grid;
-        row-gap: 0;
-        padding-top: 20px;
-        grid-template-columns:auto;
-        border: 1px solid black; 
+        @include ajustes-main;
         h2{
             @include letra-titulos-secundarios; 
-            padding: 1em;
          }
     
         .form_section{
             display: grid;
-            width: 300px;
+            width: 100%;
             justify-content: center;
             align-content: center;
             grid-template-columns:100px;
@@ -24,37 +19,45 @@ main{
             justify-self: center;
             grid-template-rows:auto auto auto auto;
             form{
+                width: auto;
                 animation-name: hood;
                 animation-duration: 1.5s;
-            }
-            @keyframes hood {
-                0%{
-                    opacity: 0;
+                @keyframes hood {
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
                 }
-                100%{
-                    opacity: 1;
+                label{
+                    padding: 10px 0;
+                    font-size: 35px;
+                    color: white;
                 }
-            }
-            label{
-                padding: 20px 0;
-                font-size: 35px;
-                color: white;
-            }
-            input{
-                color: black;
-                font-size: 35px;
-                border-radius: 45px;
-            }
-            .form_section_botones{
-                display: grid;
-                width: 400px;
-                display: grid;
-                padding:5px 0 5px 0;
-                grid-template-columns: auto auto;
-                gap: 10px;
-                align-items: center;
-                justify-items: center;
-            
+                input{
+                    color: black;
+                    font-size: 35px;
+                    border-radius: 45px;
+                }
+                .form_section_botones{
+                    display: grid;
+                    padding:5px 0 5px 0;
+                    grid-template-columns: auto auto;
+                    align-items: center;
+                    justify-items: center;
+                    .buton--1{
+                        border-radius: 12px;
+                        width:auto;
+                        padding:5px 0 5px 0;
+                        gap: 10px;
+                        background-color: rgba(255, 248, 248, 0.454);
+                    }
+                    .buton--2{
+                        @extend .buton--1
+                    }
+                }
+
             }
         }     
   
