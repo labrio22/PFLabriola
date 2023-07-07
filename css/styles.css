@@ -257,7 +257,7 @@ main .camperas .form_section form .form_section_botones {
 main .camperas .form_section form .form_section_botones .buton--1, main .camperas .form_section form .form_section_botones .buton--2 {
   border-radius: 12px;
   width: auto;
-  padding: 5px 0 5px 0;
+  padding: 5px 4px;
   gap: 10px;
   background-color: rgba(255, 248, 248, 0.454);
 }
