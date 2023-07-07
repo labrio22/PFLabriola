@@ -74,17 +74,32 @@ main .camperas {
   background-color: rgba(0, 0, 0, 0.885);
   border: 1px solid black;
 }
-main h1:hover {
+main .camperas h1:hover {
   background-color: rgba(0, 0, 0, 0.14);
   color: rgb(0, 0, 0);
   transform: scale(1.2);
   border-radius: 10px;
 }
-main .camperas_texto {
+main .camperas h5 {
+  font-size: 30px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+  font-weight: 600;
+}
+main .camperas p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 1em;
+  text-align: center;
+}
+main .camperas .camperas_texto {
   display: grid;
   color: white;
 }
-main .camperas_texto h1 {
+main .camperas .camperas_texto h1 {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -93,10 +108,10 @@ main .camperas_texto h1 {
   text-align: center;
   padding: 1em;
 }
-main .camperas_texto_img img {
+main .camperas .camperas_texto_img img {
   background: linear-gradient(175deg, #000000, rgba(205, 50, 50, 0.568627451));
 }
-main .camperas_texto_motivacional h5 {
+main .camperas .camperas_texto_motivacional h4 {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
